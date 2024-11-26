@@ -1,0 +1,24 @@
+what is diffrernce between html and html5 or 
+what are the features of html5
+1, symantic elements introduce : the element which has meaning in it name 
+                                - ex header,footer, nav,main, section,aside
+2, new input type , new attribute and new tag;
+3, multimedia element introduce : we can insert video and video file
+4, html api introduce:
+    -geolocation: -if return user current loaction
+                  -if you want to use it gps must have install in the system
+    -drag and drop: grabbing an object from one loaction and put at another place.
+    -web-worker : it is samll javascript code which executes at backend of browser without affecting its current execution .
+    -webstorage : is is use to store user data on browser
+                - there are two types of webstorage.
+                1, localstorage: it is use to soter user data for permenantly.
+                2, session storage: it is use to store user data for limited time.
+    --SSE(server sent event): it allows us to ger automatic update from server.
+
+_____________________________________________________________________________________________________
+
+iframe:
+
+it is used to create small window in webpage
+ we can use iframe tag for
+ 1, display 
