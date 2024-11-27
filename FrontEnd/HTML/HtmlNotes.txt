@@ -52,4 +52,7 @@ in form tag:
     - method: we can specify the method here.
     - action : we can give the link for action that has to reach out.
     
-    _________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+
+new input type
+new attribute
