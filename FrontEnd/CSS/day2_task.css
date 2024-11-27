@@ -1,0 +1,30 @@
+.box{
+    position: relative;
+    border: 2px solid;
+    height: 400px;
+    width: 600px;
+}
+
+.Top-left{
+    position: absolute;
+}
+.Top-Right{
+    position: relative;
+    left: 520px;
+
+}
+.cent{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+.Bottom-left{
+    position: absolute;
+    bottom: 0px;
+}
+.Bottom-Right{
+    position: relative;
+    left: 503px;
+    bottom: -346px;
+}
