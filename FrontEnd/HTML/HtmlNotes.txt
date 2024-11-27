@@ -22,3 +22,34 @@ iframe:
 it is used to create small window in webpage
  we can use iframe tag for
  1, display 
+
+_____________________________________________________________________________________________________
+
+
+27/11/2024
+
+form : it is used to get data from user.
+to submit forms data we have two methods
+
+get method: default the form has get method.
+            form data will be vissible in thw browser url
+            - with get method we cannot send the confidential data.
+            - there is character limitation with get method to send data through url.
+post method: form data will be not vissible to user it will save in body object.
+            - with post method we can submit confidential data.
+            - there is no charater limitation to submit data.
+
+<input type="text" pattern="^[a-zA-z ]{2,20}$" name="fname" id="uname" placeholder="enter your full name" maxlength="20" minlength="3">
+
+input tag:
+    - type: type of the input
+    - pattern : we can give the pattern that has to mathch the input
+    - maxlenght: maximun length that has to enter
+    - minLength : minLengh that has to allow as input
+    - palceholder: it is used to describe the input box.
+    - name: it will send the data through the link and we perform operation in the backend.
+in form tag:
+    - method: we can specify the method here.
+    - action : we can give the link for action that has to reach out.
+    
+    _________________________________________________________________________________________________

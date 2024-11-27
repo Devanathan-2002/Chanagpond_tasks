@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form practice</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="uname">Enter your full name: </label>
+            <input type="text" pattern="^[a-zA-z ]{2,20}$" name="fname" id="uname" placeholder="enter your full name"
+                maxlength="20" minlength="3" required>
+        </div>
+        <div>
+            <label for="upass">Enter your password: </label>
+            <input type="password" pattern="^[a-zA-z ]{2,20}$" name="pass" id="upass" placeholder="enter your password" required>
+
+        </div>
+        <div>
+            <label for="uemail">Enter your email: </label>
+            <input type="email" name="email" id="uemail" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="ucontact">Enter your contact: </label>
+            <input type="tel" name="contact" id="ucontact" placeholder="Enter your mobile number" required>
+        </div>
+        <div>
+            <label for="udob">Enter your dob </label>
+            <input type="date" name="dateofbirth" id="udob" placeholder="Enter your date of birth" required>
+        </div>
+        <div>
+            <label for="">Select your gender: </label>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="transgender">Transgender
+        </div>
+        <div>
+            <label for="">Select your Education: </label>
+            <input type="checkbox" name="edu" value="SSLC">SSLC
+            <input type="checkbox" name="edu" value="HSC">HSC
+            <input type="checkbox" name="edu" value="UG">UG
+            <input type="checkbox" name="edu" value="PG">PG
+        </div>
+        <div>
+            <label for="">Select Your course: </label>
+            <select multiple name="course" required>
+                <option value="">select your course</option>
+                <option value="Python">Python</option>
+                <option value="java">Java</option>
+                <option value="react">React</option>
+                <option value="Angular">Angular</option>
+            </select>
+        </div>
+        <h2>The new input types</h2>
+        <div>
+            <input type="number" name="myage" min="10" max="100"><br>
+            <input type="date" name="mydate"><br>
+            <input type="datetime-local" name="mydate_time"><br>
+            <input type="color" name="mycolor"><br>
+            <input type="search" name="mysearch"><br>
+            <input type="week" name="myweek"><br>
+            <input type="month" name="mymonth"><br>
+            <input type="file" name="myfile">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
