@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: burlywood;
+    border-bottom: 2px solid ;
+}
+.myborder{
+    border: 2px solid black;
+    margin: 5px;
+    width: 204px;
+    padding-left: 0px;
+}
+.mar{
+    overflow: visible;
+}
