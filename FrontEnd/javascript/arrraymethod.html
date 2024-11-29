@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students=["Deva","sanjay","kishore","santhosh","jaya","tarun"];
+        console.log(students);
+
+        //normal for
+        for(let i=0;i<students.length;i++){
+            document.write(students[i]+"<br>");
+        }
+
+        //for of
+
+        for(let s of students){
+            document.write(s+"<br>");
+        }
+
+        //for in 
+
+        for(let s in students){
+            document.write(s);
+        }
+
+        //1, push: it is use to insert values at last index of an array
+        students.push("Deva","Bala");
+        console.log(students);
+        //2, pop()
+        students.pop();
+        console.log(students);
+        // 3, unshift(): it is use to insert values at starting index of an array
+        students.unshift("mamta","Raju");
+        console.log(students);
+        //4, shift() it remove values from starting index of an array
+        students.shift();
+        console.log(students);
+
+        // 5, splice(startindex,deletecount,valuestoadd): it is use to insert and remove values from middle index of an array
+        students.splice(3,2);
+        console.log(students);
+
+        students.splice(2,1,"prasad","sai");
+        console.log(students);
+        
+        // 6, to string: it is used to convert aray data into string
+        console.log(students.toString());
+
+        //7, join(seperator): it is use to join data
+        console.log(students.join("*"))
+
+    </script>
+</body>
+</html>

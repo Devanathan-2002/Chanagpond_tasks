@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Employess above Age 55</h2>
+    <p id="age"></p>
+    <h2>Employess from TamilNadu</h2>
+    <p id="tn"></p>
+    <h2>Managers</h2>
+    <p id="man"></p>
+    <h2>Female Employess</h2>
+    <p id="fe"></p>
+    <script>
+        let employees = [
+  {
+    id: 1,
+    name: "Alice Johnson",
+    post: "Software Engineer",
+    salary: 85000,
+    gender: "Female",
+    age: 29,
+    city: "Chennai",
+    state: "Tamil Nadu",
+  },
+  {
+    id: 2,
+    name: "Bob Smith",
+    post: "Data Analyst",
+    salary: 70000,
+    gender: "Male",
+    age: 32,
+    city: "Chennai",
+    state: "Tamil Nadu",
+  },
+  {
+    id: 3,
+    name: "Clara Brown",
+    post: "Product Manager",
+    salary: 95000,
+    gender: "Female",
+    age: 58,
+    city: "Chennai",
+    state: "Tamil Nadu",
+  },
+  {
+    id: 4,
+    name: "David Wilson",
+    post: "UI/UX Designer",
+    salary: 78000,
+    gender: "Male",
+    age: 27,
+    city: "Chennai",
+    state: "Tamil Nadu",
+  },
+  {
+    id: 5,
+    name: "Emma Davis",
+    post: "HR Specialist",
+    salary: 65000,
+    gender: "Female",
+    age: 62,
+    city: "Chennai",
+    state: "Tamil Nadu",
+  },
+  {
+    id: 6,
+    name: "Frank Miller",
+    post: "DevOps Engineer",
+    salary: 90000,
+    gender: "Male",
+    age: 31,
+    city: "Denver",
+    state: "Colorado",
+  },
+  {
+    id: 7,
+    name: "Grace Lee",
+    post: "Marketing Manager",
+    salary: 87000,
+    gender: "Female",
+    age: 61,
+    city: "Boston",
+    state: "Massachusetts",
+  },
+  {
+    id: 8,
+    name: "Hank Taylor",
+    post: "Business Analyst",
+    salary: 72000,
+    gender: "Male",
+    age: 33,
+    city: "Atlanta",
+    state: "Georgia",
+  },
+  {
+    id: 9,
+    name: "Isabella Martin",
+    post: "Content Writer",
+    salary: 60000,
+    gender: "Female",
+    age: 26,
+    city: "Los Angeles",
+    state: "California",
+  },
+  {
+    id: 10,
+    name: "Jack Anderson",
+    post: "QA Engineer",
+    salary: 68000,
+    gender: "Male",
+    age: 29,
+    city: "Portland",
+    state: "Oregon",
+  },
+];
+
+for(s of employees){
+    if(s["age"]>55)
+    {
+        document.getElementById("age").innerHTML+=`${s["name"]}<br>`;
+    }
+    if(s["state"]==="Tamil Nadu")
+    {
+        document.getElementById("tn").innerHTML+=`${s["name"]}<br>`;
+    }
+    if(s["post"].includes("Manager"))
+    {
+        document.getElementById("man").innerHTML+=`${s["name"]}<br>`;
+    }
+    if(s["gender"]==="Female")
+    {
+        document.getElementById("fe").innerHTML+=`${s["name"]}<br>`;
+    }
+}
+    </script>
+</body>
+</html>

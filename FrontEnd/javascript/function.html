@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function welcome() {
+            return "welcome you all the python session <br>"
+        }
+        document.write(welcome());
+        let data = welcome();
+        document.write(data);
+
+        function add(a, b) {
+            return a + b;
+        }
+        document.write(add(20, 30), "<br>");
+        document.write(add(20, 300), "<br>");
+
+        // anaonymus function
+
+        let mul_1 = function (num1, num2) {
+            return num1 * num2 + "<br>";
+        }
+        document.write(mul_1(100, 100));
+        // arrow function
+        let div = () => {
+            return 100 / 5 + "<br>";
+        };
+
+        let mul = () => 5 * 3 + "<br>";
+
+
+        document.write(mul());
+
+        document.write(div());
+
+        // optional parameterized function
+
+        let fullname=(fname,lname,mname=null)=>{
+            return fname+mname+lname+"<br>";
+        }
+        document.write("deva","nathan","k");
+
+
+        // rest parameterizd function: when we dont know how many parameter required, in the we use spread operator (...)
+
+        let stdlist=(...s1)=>{
+            return s1
+        }
+        document.write(stdlist("deva","sanjay","kishore"));
+
+
+    </script>
+</body>
+
+</html>

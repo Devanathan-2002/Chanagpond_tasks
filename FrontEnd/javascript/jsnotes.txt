@@ -24,3 +24,78 @@ how to use javascript?
  3, console.log(): it will display output in browser console or in internal.
  4, innerHTML(DOM): it will display output inside an element.
 
+_________________________________________-------------------------------------_______________________
+
+
+
+29/11/2024:
+
+hoisting:
+
+moving varibale and function decleration at the top of the webpage.
+
+variable: it is use to store data in it.
+- we can create in js by using var, let, const
+
+1,  var: it create function scope variable.
+    we can use variable before its decleration
+    we can redeclare variable.
+
+2, let: --it create block scope variable.
+        --we can not use variable befroe its decleration.
+        --we can not redeclare variable.
+
+3, const : it create block scope variable.
+        -- we can not use variable before its declerataion.
+        -- in this when we declare a variable at same time we have to initilaize it.
+        -- its data will never change on run time.
+
+--exponention(**) it return powewr of any number
+
+==(equals to): 
+-- it will check value only and if both are same the it return true value.
+
+===(exactly equals to):
+-- it will check value as well as its datatype and if both are same it will return true value.
+
+
+dom manipulation:
+
+function: it is block of code which is use to perform specific task.
+            - function will execute only when we call it.
+
+there are mainly two types of function:
+
+1, predefine function: provide js to us.
+2, userdefine: user developed for particular use.
+
+syntax: 
+
+function functionName(){
+    //logical code
+}
+
+functionName();
+
+how to change attribute value by using dom
+how to call function by using event
+how to access data from input control
+
+
+array:
+--it is use to store multiple values with same data type.
+--in aarry data store on index basics.
+--array index always start from zero index.
+-- we can access array values outside by wrirting arrayname[indexnumber]
+
+
+object:
+
+it is use to store multiple values with different data types.
+--in object data store in key and value paired formate.
+-- we can access object data outside of by writting object.keyName.
+-- object type of data in denoted by {}
+
+callback function:: passing a function name as a argument inside another inside another function is called callback function.
+
+
