@@ -1,30 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
 header{
     border-bottom: 5px solid;
     background-color: aquamarine;
     height:100px
 }
+.blocks{
+    border: 2px solid red;
+    width: 20%;
+    height: 100px;
+    padding: 5px;
+    float: left;
+    overflow:scroll;
+}
+.blocks img{
+    height: 100px;
+    width: 100%;
+}
 @media  screen and (max-width:1200px) {
     header{
         background-color: red;
     }
+
 }
-@media  screen and (max-width:576px) {
+@media  screen and (max-width:992px) {
     header{
         background-color: yellow;
     }
+    .blocks{
+        width: 25%;
+    }
 }
-@media  screen and (max-width:320px) {
+@media  screen and (max-width:768px) {
     header{
         background-color: green;
     }
+    .blocks{
+        width: 50%;
+    }
 }
-@media  screen and (max-width:768px) {
+@media  screen and (max-width:576px) {
     header{
         background-color: blueviolet;
     }
-}
-@media  screen and (max-width:768px) {
-    header{
-        background-color: blueviolet;
+    .blocks{
+        width: 100%;
     }
 }

@@ -1,0 +1,37 @@
+28/11/2024:
+
+Bootstrap:
+-it is html,css and js framework
+- it make webapp attractive, responsive and mobile friendly.
+- it provides in build classes.
+- latest version of boot strap is 5
+
+there are two to use bootstrap
+- by using cdn link: for this we must have internet connection
+- by downlaading: only for downloading the internet connection is required.
+
+official website:
+-getbootstrap.com
+
+
+container class: apply 50 px to left snd right
+
+color class
+bg-color classes
+button classes
+spinner-grow classess
+spinner-border classess
+image classes
+table classes
+how to use carusol
+how ot use nav
+how to use accordian
+
+grid:
+it is used to manage layout of webapp by using inbuilt classess
+-in bootstrap grid it provide mainly two classes
+1, row class
+2, col class
+- in bootstrap grid row we can create coloumns with size 12 , if mcolcoumn size is extended more than 12 size then coloumn start from new row.
+
+

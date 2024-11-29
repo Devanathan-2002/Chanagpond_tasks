@@ -66,3 +66,22 @@ device screen-width <=576px xsm screen
 screen weidth
 1, max-width : css property will applicable from its minimum width to its max-width not above to it.
 2, min- width: css property will be applicable from its minimum width to above width 
+_________________----------------_______________________________------------------___________________
+
+28/11/2024:
+
+
+box-sizing property: it include element border size and element padding size in its actual width
+box-sizing: border-box;
+
+float:
+--it is use to move block element side by side.
+--it has three values, left, right, none
+
+overflow: it is use to fit big content into snmall
+overflow: vissible (default)
+overflow: hidden conten going outside will hidden
+overflow: scroll it will fix big content into box and scrool bar
+
+flex: it is use to manage website layout with different screen width
+        - t use it we have to apply display: flex
