@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Traffic signal</title>
+</head>
+<style>
+    body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container{
+            width: 200px;
+            height: 525px;
+            background-color: #ffffff;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .stop,.ready,.go{
+            width: 150px;
+            height: 150px;
+            border: 4px solid black;
+            border-radius: 50%; 
+            margin-bottom: 10px;
+            background-color: gray; 
+        }
+        
+        
+</style>
+<body>
+    <div class="container">
+       
+         <div class="stop" id="red"></div>
+         <div class="ready" id="yellow"></div>
+         <div class="go" id="green"></div>
+    </div>
+       
+    
+    <script>
+         const lights = ["red", "yellow", "green"];
+        let currentIndex = 0;
+
+        
+        function turnOffAllLights() {
+            document.getElementById("red").style.backgroundColor = "#d3d3d3"; 
+            document.getElementById("yellow").style.backgroundColor = "#d3d3d3";
+            document.getElementById("green").style.backgroundColor = "#d3d3d3";
+        }
+
+        function activateLight(index) {
+            if (lights[index] === "red") {
+                document.getElementById("red").style.backgroundColor = "red"; 
+            } else if (lights[index] === "yellow") {
+                document.getElementById("yellow").style.backgroundColor = "yellow"; 
+            } else if (lights[index] === "green") {
+                document.getElementById("green").style.backgroundColor = "green"; 
+            }
+        }
+
+        // Traffic signal loop
+        setInterval(() => {
+            turnOffAllLights(); 
+            activateLight(currentIndex); 
+            currentIndex = (currentIndex + 1) % lights.length;
+        }, 3000); 
+    </script>
+    
+</body>
+</html>
