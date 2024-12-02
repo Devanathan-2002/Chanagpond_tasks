@@ -1,0 +1,19 @@
+oops:
+--class: it is collection of data memeber and member function.
+-- it is template which we can re use.
+-- to create class we use class keyword.
+
+this: it refers to the current class or object to access its data inside it only.
+
+2, object:
+
+--it is an instace of class.
+--it allow us to access class data member and member fuction outside class.
+
+syntax: let objectName=new ClassName();
+
+constructor:
+-- it is special member function of class.
+-- it will executes autimatically when class object is created or initialized.
+-- in typescript constructor name must be only connstructor.
+-- 

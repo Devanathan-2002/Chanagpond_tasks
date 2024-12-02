@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let msg="Welcome_to_the_changepond_to_the_Organization";
+        document.write(`${msg} <br>`);
+        document.write(`${msg.length} <br>`);
+        document.write(`${msg.toUpperCase()} <br>`);
+        document.write(`${msg.toLowerCase()} <br>`);
+
+        //use of index method
+        document.write(`${msg.indexOf("the")} <br>`);
+        document.write(`${msg.indexOf("the",14)} <br>`);
+        //use of lastindexof method
+        document.write(`msg.lastIndexOf("to"): ${msg.lastIndexOf("to")} <br>`);
+        document.write(`msg.lastIndexOf("to",20): ${msg.lastIndexOf("to",28)} <br>`);
+        //use of search
+        document.write(`msg.search("changepond"): ${msg.search("changepond")} <br>`);
+        document.write(`msg.search("India"): ${msg.search("India")} <br>`);
+
+
+        // use of slice()
+        document.write(`msg.slice(15): ${msg.slice(15)} <br>`);
+        document.write(`msg.slice(15,30): ${msg.slice(15,30)} <br>`);
+        document.write(`msg.slice(-20): ${msg.slice(-20)} <br>`);
+        document.write(`msg.slice(-20,-5): ${msg.slice(-20,-5)} <br>`);
+
+        //use of substring
+        document.write(`msg.substring(10): ${msg.substring(10)} <br>`);
+        document.write(`msg.substring(10,25): ${msg.substring(10,25)} <br>`);
+
+        // use of substr()
+        document.write(`msg.substr(5,10): ${msg.substr(5,10)} <br>`);
+
+        //use of CharAt()
+        document.write(`msg.charAt(0): ${msg.charAt(0)} <br>`);
+        // use of charCodeAt()
+        document.write(`msg.charCodeAt(0): ${msg.charCodeAt(0)} <br>`);
+        //usr of replace()
+        document.write(`msg.replace("changepond","EP"): ${msg.replace("changepond","EP")} <br>`);
+        document.write(`msg.replace("changepond","EP"): ${msg.replace(/changepond/i,"EP")} <br>`);
+        document.write(`msg.replace("changepond","EP"): ${msg.replace(/changepond/ig,"EP")} <br>`);
+        document.write(`msg.replaceAll("changepond","EP"): ${msg.replaceAll("changepond","EP")} <br>`);
+
+        
+
+
+    </script>
+</body>
+</html>

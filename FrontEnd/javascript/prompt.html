@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let data=prompt("Enter The letter");
+        // let vowels=["a","e","i","o","u"];
+        // if (vowels.includes(data)){
+        //     document.write("vowels");
+        // }
+        // else{
+        //     document.write("Consonents");
+        // }
+        // let data=prompt("Enter The number");
+        // if (parseInt(data)%2==0){
+        //     document.write("even");
+        // }
+        // else{
+        //     document.write("Odd");
+        // }
+
+
+        let data=prompt("Enter your mail: ");
+        let data_check=['changepond',"gmail","hotmail","yahoo"];
+        let final;
+        final=data.split("@");
+        let domine=final[1].split('.')[0];
+        if (data_check.includes(domine)){
+            document.write("Valid")
+        }
+        else{
+            document.write("InValid")
+        }
+
+
+    </script>
+</body>
+</html>

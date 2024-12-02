@@ -97,5 +97,54 @@ it is use to store multiple values with different data types.
 -- object type of data in denoted by {}
 
 callback function:: passing a function name as a argument inside another inside another function is called callback function.
+_____________________________________________________________________________________________________
+
+
+2/12/24
+
+STRING AND ITS METHODS
+
+STRING:
+--it is a collection of characters.
+--in string every char has index value and it starts from zero
+--in string blank space is also considered as string
+
+there are threee methods which index of seaarching string:
+1, Indexof(searchingstring,startIndex?):
+-it will search from left to right and return index of first occuraces of string.
+-it searching string is not found then return -1 as result.
+
+2, lastindexOf(searchingstring,startIndex):
+-it will search string from right to left and return index of first occurances of string.
+-it searching string is not found then return -1 as result.
+
+3, search(searchingString):
+--it will search string from left to right and return index of frist occurace of string
+--it searching string is not found then return -1 as result.
+--it is faster than index method.
+
+there are threee methods which return part of searching.
+
+1, slice(startIndex,endindex?):
+-- it will return part of string from bifg string.
+--if we write +ve index then will search index from left to right.
+--if we write -ve index then it will search index from right to left
+
+2. substring(startIndex,endIndex?):
+    --it will return part of string from big string
+    --if we write +ve index then will search index from left to right.
+
+3. substr(startIndex,totalNumberOfCharacter):
+    --it will return part of string from big string
+    --if we write +ve index then will search index from left to right
+    --it will return total no of characters in second parameter from given startIndex
+
+CHARAT(INDEX):
+--It return character from index number
+CHARCODEAT(INDEX)
+--It returns ASCII value of given index
+
+
+
 
 
