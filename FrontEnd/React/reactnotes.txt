@@ -1,0 +1,101 @@
+3/12/24
+
+react:
+
+it is javascript library
+it is use to create rich user interface
+it create single page application(spa).
+
+
+technology prerequists:
+
+html,css,js(basic js,ES5 and ES6,oops);
+
+software:
+--node js
+commanand tho check node js version:
+node -v
+npm -v
+
+--vs code editor
+
+
+how to create react project
+there are three ways to create react project
+-- by using npm: need to install configuration file.
+    -- npm install -g create-react-app.
+    -- create-react-app appname.
+    -- cd appname
+    -- npm start
+
+-- by using npx: no need to install configuration file
+    -- npx create-react-app appname.
+    -- cd appname
+    -- npm start
+
+-- by using vite: it creates minimun package.
+
+how to start react project:
+npm start
+
+
+react folder structure:
+all the depandicies and dev-dependencies will install in this
+-- package.json:all dependencies entry will found.
+--package-lock.json: detail description of file you will found here.
+--readme,md it is guid file how to use react project.
+--public: it will contain static data in it.
+
+react is component basics technology:
+
+compnent: it is partial part of react project.
+
+in react app.js is root component.
+
+-in ecah we have two types of component,
+
+function component: when your main focus is on ui dessign.
+class component: when you have to implement complex logic in that caase we use it
+
+how to display compnent output.
+
+JSX(javascript+xml):
+it allows us to write html code in react.
+
+it makes ract code eassy in jsx we have wrape multiple element inside ine parent element.
+
+parent element must be any block elemt like div,h1-h6,p etc..
+
+
+props: 
+--it is parmeter or fnctional parameter which is use pass data inside component.
+--props return data in object formate.
+-- wer can accesss props in function component by wtriting props.propsname.
+--we can access props in class componenet by witiong this.props.propsName.
+
+state:
+
+--it is use to handel essential in calss compponnet.
+--it return us object type of data.
+--in class component we write state inside constructor.
+--if you want use state in function component for that we use useState Hook
+
+how to use bootstrap in react:
+
+--npm i bootstrap
+-- go to index.js file and import its path
+-- use bootstrap classes
+path:bootstrap/dist/css/
+
+
+conditional rendering:
+--display componnet on the basics conditional
+-- use of if else: if condition is true then if block will execute otherwise else block
+-- element as variable: in variable we stotre data and display inside tag and retuen it
+-- use of ternary operator: short hand syntasx for if else
+
+how to use cs in react:
+there are threee ways to0 use css:
+internal css:
+external css:
+module css:

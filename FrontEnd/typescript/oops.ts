@@ -1,4 +1,4 @@
-class Person{
+export class Person{
     pid:number=101;
     pname:string="Deva";
     paddress:string="Chennai";

@@ -16,4 +16,51 @@ constructor:
 -- it is special member function of class.
 -- it will executes autimatically when class object is created or initialized.
 -- in typescript constructor name must be only connstructor.
--- 
+__________________________--------------_____________________________________________________________
+
+3/12/24
+
+Inheritance:
+-- accessing parent class property into child class.
+- to perform inheritance in between classes we use extends keyword.
+
+
+super():
+-- it represents parent calss constructor inside child class constructor.
+-- super method must be first statement in child class constructor.
+
+encapsulation:
+--warpping of data inot single unit.
+
+--public: we can access class property inside,outside class as well as in derived class.
+-- protected: we can access class property inside same class as well as derived class.
+--private: we can access class prperty inside same class only.
+
+
+
+polymorpism:
+
+it is ability to take more than one form.
+--method overloading:
+-- when we have multiple method with same name in class.
+-- when we have multiple method with same name in different class.
+
+abstraction:
+
+--hiding implementation and showing necessary information.
+-- we can achive this by uisng interface,abstract class.
+
+
+module:
+wwiting ts code in sigle and multiple file reuse or access it in another file
+-- to achive this we use export and import keywords.
+-- to send data we use export keyword.
+-- to  access it we use import.
+
+ *interface:
+ -it is signature of class.
+ -it contain abstract method.
+ -to create interface we use interface keyword.
+ -its child cls has responsibility to implemnt it.
+ -to implement we use implements keyword.
+
