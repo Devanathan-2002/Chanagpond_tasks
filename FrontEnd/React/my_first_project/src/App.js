@@ -9,6 +9,15 @@ import MyStateComp from './components/MyStateComp';
 import Incrementer from './task/CounterTask';
 import ConditionalComp from './components/ConditionalComp';
 import CssComp from './components/CssComp';
+import ParentComp from './task/ParentComp';
+import CounterComp from './task/CounterComp';
+import MyImageComp from './components/MyImageComp';
+import UserComponent from './task/UserComponent';
+import ErrorBoundaryComponent from './task/ErrorBoundaryComponent';
+import VirtualDom from './components/VirtualDom';
+import EmpDetails from './task/EmployeeComp';
+import ToggleImageComp from './task/ToggleImageComp';
+
 function App() {
   return (
     <div className="App">
@@ -26,7 +35,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-    <h1>Welcome you all!</h1>
+    {/* <h1>Welcome you all!</h1> */}
     {/* <FuncComp fname="deva" frname="sanjay"/>
     <DevaFuncComp fname="Deva" lname="Nathan" salary={997977} gender="male"  />
     <ClassComp fname="deva" frname="sanjay"/>
@@ -35,7 +44,28 @@ function App() {
     <MyStateComp/> */}
     {/* <Incrementer/> */}
     {/* <ConditionalComp/> */}
-    <CssComp/>
+    {/* <CssComp/> */}
+    {/* <ParentComp empNameProps="Deva" empSalaryProps={20000}/> */}
+    {/* <CounterComp/> */}
+    {/* <MyImageComp/> */}
+    {/* <ErrorBoundaryComponent>
+    <UserComponent fname="sanjay"/>
+    </ErrorBoundaryComponent>
+    <ErrorBoundaryComponent>
+    <UserComponent fname="deva"/>
+    </ErrorBoundaryComponent>
+    <ErrorBoundaryComponent>
+    <UserComponent fname="kishore"/>
+    </ErrorBoundaryComponent>
+    <ErrorBoundaryComponent>
+    <UserComponent fname="perumal"/>
+    </ErrorBoundaryComponent>
+    <ErrorBoundaryComponent>
+    <UserComponent fname="tarun"/>
+    </ErrorBoundaryComponent> */}
+    {/* <VirtualDom/> */}
+    {/* <EmpDetails/> */}
+    <ToggleImageComp/>
     </div>
   );
 }

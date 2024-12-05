@@ -75,7 +75,7 @@ props:
 
 state:
 
---it is use to handel essential in calss compponnet.
+--it is use to handel essential in class component.
 --it return us object type of data.
 --in class component we write state inside constructor.
 --if you want use state in function component for that we use useState Hook
@@ -94,8 +94,57 @@ conditional rendering:
 -- element as variable: in variable we stotre data and display inside tag and retuen it
 -- use of ternary operator: short hand syntasx for if else
 
-how to use cs in react:
-there are threee ways to0 use css:
+how to use css in react:
+there are three ways to0 use css:
 internal css:
 external css:
 module css:
+
+
+-----------------------------------------------------------------------------------------------------
+
+4/12/24
+
+frangment in react:
+--it is an alternative oprnion for jsx.
+-- it remove unwated element from DOM herirachy.
+
+parentComp (cc): state empName,empsal display it output write method to manipulate state property.
+
+
+component interaction:
+-- accessing data from parent component to child component.
+-- while performing component interaction in between component they must have parent child relation.
+-- how to establish parent child relation in between component, first we have to import child.
+-- component in parent component and then write child component name as tag in parent component.
+
+_pure component_:
+
+--it is use to prevent un-nessary re-rendering class component by performing shallow comparision.
+- to achive this we have extends class component with pure component class.
+
+_react.Memo()_:
+
+-it is use to prevent un-nessary re-rendering function component by performing shallow comparison.
+-- to achive we have to apss function component name as argument to react.memo() method.
+
+
+_hod_(higher oreder component):
+-- when we have to share same buissness logic with multiple component in that case we use it.
+-- in this we share buissness logic from function component to class or function component.
+
+__Error boundary_:
+
+-- it is react component which is use to handel error occur in component three while rendering component.
+-- to handle it we use two class component life-cycle method.
+1, getDerivedStateFormError(): when error occur in component it execute automatically.
+2, componentDidCatch(): it will display error log(error imformation).
+
+_virtual DOM_:
+--Instead of manupulating the virtual dom randomly the rect cretates virtual dom in its memory, where its all the nessary changes in memory before making change in broweser dom.
+-- react render the code needs to be change only.
+
+
+
+
+
