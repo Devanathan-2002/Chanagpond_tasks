@@ -65,7 +65,7 @@ function App() {
     </ErrorBoundaryComponent> */}
     {/* <VirtualDom/> */}
     {/* <EmpDetails/> */}
-    <ToggleImageComp/>
+    {/* <ToggleImageComp/> */}
     </div>
   );
 }

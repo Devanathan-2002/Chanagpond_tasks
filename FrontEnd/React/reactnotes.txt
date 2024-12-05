@@ -144,6 +144,40 @@ _virtual DOM_:
 --Instead of manupulating the virtual dom randomly the rect cretates virtual dom in its memory, where its all the nessary changes in memory before making change in broweser dom.
 -- react render the code needs to be change only.
 
+_routing in react_:
+
+--navigation in react.
+-- by wruting routing path name in browser url to dispaly component output or view.
+-- we use react-router-dom library in react to perfrom routing.
+
+
+_router_:
+-- https://reactrouter.com/upgrading/v6
+
+1, createBrowserDom(): it is a method which taskes array of type of data.
+                        -in its object we use two property path and element.
+                        - in this mehtod we define all types of routing.
+2, RouterProvider(): it helps us to render output of all routing component on browser.
+
+
+src folder:
+  -- mainRouting folder:
+        routing.js file
+--- layout folder:
+    LoginComp
+    FooterComp
+    MainDashBordComp
+    PageNotFoundComp
+
+_types of routing_:
+
+1, naming routing: display component after writing component routing path name in browser.
+2, default routing: display component output without routing path name.
+3, parameterized routing: display componenet output after passing parameter with routhing path name.
+4, child routing: display one routing inside another routing.
+                -- to perform child routing we use children property in object which array of object value.
+                -- to display child routing output we have to add <outlet> library in parent routing component.
+5, wild card routing.when user write wrong path name in browser url then we decide what component output should displlay.
 
 
 
