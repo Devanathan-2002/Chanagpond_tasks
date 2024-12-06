@@ -180,5 +180,114 @@ _types of routing_:
 5, wild card routing.when user write wrong path name in browser url then we decide what component output should displlay.
 
 
+how to create layout for reactProject:
+
+Class component life cycle method:
+-it comes with four phases.
+1, mounting phase:
+    -- constructor: when class object initialize constructor get execute automatically.
+    -- getDerivedStateFromProps: it is static methodwhich execute automatically and it is use to set value coming form props to state.
+    -- render: it is respoansible to render component data.
+    -- componentDidMount: it will execute immidiatly after render method.
+
+2, update phase: when Dom manipulation is done.
+    --shouldComponentUpdate: it decide wether component will update or not.
+                            - it return boolean value, if true then componet will update.
+    -- getSnapShotBeforeUpdate:it return previous data of props and state defore updation of it.
+    -- render: it is reponsible to render component data.
+    -- compnentWillUpdate: it will return updated
+3.unmounting phases : when Componentis deleted
+    ==> componentWillMount--it just call before component deleted,it is use to disconnect component 
+                            connection other component.
+ 
+4.Error phase : 
+    ==> getDerivedStateFromError()-- it execute automatically when error occure in Components 
+    ==> componentDidCatch()--it return error log
+
+REACT REDUCT EXTENSION :
+--rfce -- Create normal Function component
+--rafce -- create arrow function component
+--rce -- create class component
+--rconst -- it create constructor with super method and  state.
+
+HOOKS IN REACT:
+--it allows us to use class component feature in function component
+--by using hooks we can use  state in function component
+--in react hooks introduce in react version-16
+
+RULES TO USE REACT:
+--hooks work only in function component
+--hooks always use in top-level component
+--hooks can not be render conditionaly
+
+1.useState Hook:
+2.useEffect Hook:
+3.useContext Hook:
+4.useRef Hook:
+5.useReducer Hook:
+6.useCallback hooks:
+7.useMemo hooks:
 
 
+useState hook:
+-- if you want to use state in function component for that yoou have to use usestate hook
+-- it return two values, 1==Currentstate 2==function-to-update-statedata
+-- before using it import it first from react library.
+syntax: const[currentState,functionToUpdateState]=useState(Value);
+
+
+useState Hook: it will execute after component render data.
+-- it will handel work of componentDid Mount,componnetDidUpdate,componentWillMount in function.
+-- it takes two values 1, callback function, 2, dependencies.
+syntax: useEffect(()=>{},dependencies)
+
+React/Reduct extension:
+- rfce:create normal function component.
+- rafce: create arrow function component.
+-- rce: create class component.
+-- rconst: it create constructor with super method and state.
+
+
+case1: when no dependencies values
+        -- use effect will execute after every render.
+case 2: when we pass dependencies value as blank array
+        -- use Effect hook will execute only once.
+        syntax: useEffect(()=>{},[])
+case-3: when we have to execute useEffect hook as we want.
+        -- we pass value in dependencies.
+        syntax: useEffect(()=>{},dependencies).
+
+_________________________________-------------------_________________________------------------------
+
+6/12/24
+
+CRUD:
+-- rest Fake API:
+_Axios Library_: it is use to make request from react app.
+
+how to install axios:
+npm i axios
+
+_json server_: it is dummy server. it provides server environment to database.
+npm install json-server
+
+_json database_:
+
+
+how to start and json upload db.json
+cd scr/shared/database/(press enter) 
+json-server --watch -p 8888 db._json
+
+src folder:
+    CRUD folder
+        -- ProductDashComp
+        -- ProductAddComp
+        -- ProductEditComp
+
+get request: to fetch data form server.
+
+material ui:
+
+--it provides inbuild component whuch makes reeact project attractive
+-- as we as it provide icon.
+-- its official website is www.mui.com
