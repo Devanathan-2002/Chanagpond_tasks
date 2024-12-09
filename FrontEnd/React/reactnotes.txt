@@ -308,4 +308,28 @@ to create build file
 serve -s build
 
 
+*What is testing in React
+---------------------------
+S/W pre-required
+-nodejs=> node --version
+-git=> git --version
 
+
+
+-With react two comes for testing;
+1.reaact-testing:it is use to execute or run test program
+2.jest:it is test runner or it provide platform to run testcase
+
+*How to create testing component:
+componentName.test.js
+
+TDD(Test Driven Development):it is software testing process,in which developer write test case before development.
+
+*To perform testing in react need to write
+npm run test
+
+test("msg",function):
+-it is method which is use to perform unit testing.
+-it takes two parameter
+       1.message:in this message developer write what he is going to perform in short.
+       2.function:in function write testing code.
