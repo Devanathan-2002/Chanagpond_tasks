@@ -1,8 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import {Modal,Button} from 'react-bootstrap'
+
 const ProductDashComp = () => {
     const [product, setProduct] = useState([]);
+
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = (val) => {
+    setShow(true);
+    setShow(val);
+    
+  };
+    
+  
+
     useEffect(() => {
         axios.get("http://localhost:8888/products").then((res) => {
             console.log(res.data);
@@ -35,10 +50,13 @@ const ProductDashComp = () => {
         
 
     }
+    
+    
 
+    
     return (
         <div>
-            <h2> Kiruku punda deva company</h2>
+            <h2> company</h2>
             <Link to="/mainDashBoard/productadd"><button className='btn btn-danger btn-sm'>Product Add</button></Link>
             
             <table class="table table-info mt-3">
@@ -49,6 +67,7 @@ const ProductDashComp = () => {
                         <th scope="col">Product Price</th>
                         <th scope="col">Company</th>
                         <th scope="col">Product Quantity</th>
+                        <th scope="col">Info</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
 
@@ -62,6 +81,10 @@ const ProductDashComp = () => {
                             <td>{val.pprice}</td>
                             <td>{val.company}</td>
                             <td>{val.pquantity}</td>
+                            <td>
+                                <button type='button' onClick={()=>handleShow(val)}>
+                            <VisibilityIcon></VisibilityIcon>
+                                </button></td>
                             <td><Link to={`/mainDashBoard/productedit/${val.id}`}><i class="bi bi-pencil-square text-primary" ></i></Link></td>
                             <td><i class="bi bi-trash-fill text-danger" onClick={() => { deleteProduct(val.id) }}></i></td>
                         </tr>
@@ -69,6 +92,29 @@ const ProductDashComp = () => {
 
                 </tbody>
             </table>
+
+            <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>{show.pname}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>{show.pprice}</p>
+          <p>{show.pquantity}</p>
+          <p>{show.company}</p>
+
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary">Understood</Button> */}
+        </Modal.Footer>
+      </Modal>
         </div>
     )
 }

@@ -47,7 +47,9 @@ const AboutComp = () => {
                     <Link to="/contacts" style={anchor}><li>Contact</li></Link>    
                 </ul>
             </header>
-            <h2>welcome to about page</h2>
+            <div class="container">
+                
+            </div>
         </div>
     )
 }

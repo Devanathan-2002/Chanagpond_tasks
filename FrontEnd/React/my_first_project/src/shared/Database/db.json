@@ -1,143 +1,38 @@
 {
   "products": [
     {
-      "id": "ed30",
-      "pname": "Mouse434",
-      "pprice": "89323",
-      "company": "HP",
-      "pquantity": "100"
-    },
-    {
-      "id": "2bc2",
-      "pname": "Tv",
-      "pprice": "89232",
-      "company": "NKP",
+      "id": "2ddd",
+      "pname": "mobile",
+      "pprice": "50000",
+      "company": "samsung",
       "pquantity": "89"
-    },
-    {
-      "id": "4648",
-      "pname": "tarun",
-      "pprice": "0.50",
-      "company": "changepond",
-      "pquantity": "52"
-    },
-    {
-      "id": "510f",
-      "pname": "perumal",
-      "pprice": "2",
-      "company": "redlight",
-      "pquantity": "4"
-    },
-    {
-      "id": "05c8",
-      "pname": "jaya",
-      "pprice": "5",
-      "company": "Sliku",
-      "pquantity": "450"
-    },
-    {
-      "id": "4b69",
-      "pname": "kiss oruuu",
-      "pprice": "0.1",
-      "company": "suthadichanur",
-      "pquantity": "20"
-    },
-    {
-      "id": "d640",
-      "pname": "kunjai",
-      "pprice": "30",
-      "company": "kerolo",
-      "pquantity": "50"
-    },
-    {
-      "id": "0dab",
-      "pname": "blue satai (biscut allu)",
-      "pprice": "0.25",
-      "company": "oreo",
-      "pquantity": "-1"
-    },
-    {
-      "id": "166d",
-      "pname": "dhanush sins",
-      "pprice": "0",
-      "company": "drovzzers",
-      "pquantity": "1.2"
-    },
-    {
-      "id": "37ac",
-      "pname": "Biscut",
-      "pprice": "-infinity",
-      "company": "DARK FANTASY",
-      "pquantity": "25"
-    },
-    {
-      "id": "4205",
-      "pname": "half sperm (okala olli)",
-      "pprice": "20",
-      "company": "Kunji",
-      "pquantity": "2000000000000000000000"
-    },
-    {
-      "id": "398a",
-      "pname": "thanuja darun (dt)",
-      "pprice": "1",
-      "company": "akka vanthurukanda ",
-      "pquantity": "-10"
-    },
-    {
-      "id": "8d78",
-      "pname": "kasmusa javeed",
-      "pprice": "-9",
-      "company": "69 un haan",
-      "pquantity": "10"
-    },
-    {
-      "id": "df80",
-      "pname": "lavada logesh",
-      "pprice": "0",
-      "company": "p**ndian",
-      "pquantity": "9"
-    },
-    {
-      "id": "7da8",
-      "pname": "Cig kiss",
-      "pprice": "0",
-      "company": "totol",
-      "pquantity": "-01101100000"
-    },
-    {
-      "id": "0f91",
-      "pname": "puthir",
-      "pprice": "100",
-      "company": "pothar",
-      "pquantity": "5"
     }
   ],
-  "User": [
+  "user": [
     {
       "id": "1",
-      "Userid": "admin@gmail.com",
-      "userpass": "admin@123"
+      "email": "admin@gmail.com",
+      "password": "1234"
     },
     {
       "id": "2",
-      "Userid": "deva@gmail.com",
-      "userpass": "deva@123"
+      "email": "admin@gmail.com",
+      "password": "1234"
     },
     {
       "id": "3",
-      "Userid": "sanjay@gmail.com",
-      "userpass": "sanjay@123"
+      "email": "admin@gmail.com",
+      "password": "1234"
     },
     {
       "id": "4",
-      "Userid": "kishore@gmail.com",
-      "userpass": "kishore@123"
+      "email": "admin@gmail.com",
+      "password": "1234"
     },
     {
       "id": "5",
-      "Userid": "tarun@gmail.com",
-      "userpass": "tarun@123"
+      "email": "admin@gmail.com",
+      "password": "1234"
     }
   ]
 }

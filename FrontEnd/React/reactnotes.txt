@@ -291,3 +291,21 @@ material ui:
 --it provides inbuild component whuch makes reeact project attractive
 -- as we as it provide icon.
 -- its official website is www.mui.com
+
+____________------------__________-------------_________________-----------------____________________
+
+_npm use concurrently_;
+
+how to install react botstrap:
+npm install react-bootstrap bootstrap
+
+mui: it provide inbuilt component
+
+to create build file
+
+--npm run build
+
+serve -s build
+
+
+
