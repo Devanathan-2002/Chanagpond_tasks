@@ -1,0 +1,45 @@
+{
+  "products": [
+    {
+      "pname": "fridge3",
+      "pprice": "52003",
+      "company": "samsung3",
+      "pquantity": "523",
+      "id": "0324"
+    },
+    {
+      "id": "c75a",
+      "pname": "fridge",
+      "pprice": "5200",
+      "company": "Onida",
+      "pquantity": "52"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "3",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "4",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "5",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<p>parent works!</p>
+
+<div>{{childData}}</div>
+<form action="">
+    <input type="text" name="parentInput" #parentinfo><br>
+    <button type="button" (click)="senData(parentinfo.value)">Send data</button>
+</form>
+<hr>
+<app-child (eventObj)="childData=$event" [pdata]="parentData"></app-child>

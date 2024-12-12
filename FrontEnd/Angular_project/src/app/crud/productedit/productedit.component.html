@@ -1,0 +1,14 @@
+<div>
+    <form #pdata="ngForm" (ngSubmit)="addData(pdata.value)">
+        <label class="form-label">Enter Product name:</label>
+        <input type="text" class="form-control" name="pname" [ngModel]="prodData.pname">
+        <label class="form-label">Enter Product price:</label>
+        <input type="text" class="form-control" name="pprice" [ngModel]="prodData.pprice">
+        <label class="form-label">Enter Product company:</label>
+        <input type="text" class="form-control" name="company" [ngModel]="prodData.company">
+        <label class="form-label">Enter Product Quantity:</label>
+        <input type="text" class="form-control" name="pquantity" [ngModel]="prodData.pquantity">
+        <button type="submit" class="btn btn-secondary mt-2">Submit</button>
+    </form>
+</div>
+

@@ -6,6 +6,34 @@
       "pprice": "50000",
       "company": "samsung",
       "pquantity": "89"
+    },
+    {
+      "id": "6cd8",
+      "pname": "laptop",
+      "pprice": "50000",
+      "company": "vio",
+      "pquantity": "100"
+    },
+    {
+      "id": "a3cf",
+      "pname": "Fan",
+      "pprice": "2500",
+      "company": "crompton",
+      "pquantity": "56"
+    },
+    {
+      "id": "7d90",
+      "pname": "Soap",
+      "pprice": "89",
+      "company": "Chandhrikka",
+      "pquantity": "52"
+    },
+    {
+      "id": "8231",
+      "pname": "Tab",
+      "pprice": "5000",
+      "company": "Vivo",
+      "pquantity": "100"
     }
   ],
   "user": [

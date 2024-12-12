@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container  center" >
+        <img [src]="images[initial]" alt="">
+        <button type="button" class="btn btn-info" (click)="ToogleImage(initial)">Click to change</button>
+        <img [src]="images_1" alt="">
+        <h2>{{name}}</h2>
+        <div class="button-arrange">
+            <button type="button" class="btn btn-info" (click)="ChangeImage_1()">Dosa</button>
+            <button type="button" class="btn btn-info" (click)="ChangeImage_2()">Chicken</button>
+            <button type="button" class="btn btn-info" (click)="ChangeImage_3()">Egg</button>
+            <button type="button" class="btn btn-info" (click)="ChangeImage_4()">Idly</button>
+             
+        </div>
+        
+    </div>
+</body>
+</html>

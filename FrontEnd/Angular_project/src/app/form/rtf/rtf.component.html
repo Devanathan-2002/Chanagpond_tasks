@@ -1,0 +1,23 @@
+<form class="form" [formGroup]="empForm" (ngSubmit)="getData()">
+    <label for="fname">Enter your Firstname:</label>
+    <input type="text" name="fname" formControlName="fname" class="mt-2 mb-2 form-control">
+    <div *ngIf="empForm.get('fname').touched && empForm.get('fname').invalid">
+        <div *ngIf="empForm.get('fname').errors.pattern" class="text-danger">Invalid name</div>
+        <div *ngIf="empForm.get('fname').errors.required" class="text-danger">Name is required</div>
+    </div>
+    <label for="lname">Enter your Lastname:</label>
+    <input type="text" name="lname" formControlName="lname" class="form-control">
+    <div *ngIf="empForm.get('lname').touched && empForm.get('lname').invalid" class="mt-2 mb-2">
+        <div *ngIf="empForm.get('lname').errors.pattern" class="text-danger">Invalid name</div>
+        <div *ngIf="empForm.get('lname').errors.required" class="text-danger">Name is required</div>
+    </div>
+    <div>
+        <label class="form-check-label">
+            <input type="checkbox" name="term" formControlName="term" class="form-check-input"> I agree to the terms and conditions
+        </label>
+        <div *ngIf="empForm.get('term').touched && empForm.get('term').invalid">
+            <div *ngIf="empForm.get('term').errors?.requiredTrue" class="text-danger">You must agree to the terms</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-info">Submit</button>
+</form>

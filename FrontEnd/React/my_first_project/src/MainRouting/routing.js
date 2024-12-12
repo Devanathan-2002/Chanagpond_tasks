@@ -17,10 +17,11 @@ import ProductDashComp from "../CRUD/ProductDashComp";
 import ProductAddComp from "../CRUD/ProductAddComp";
 import ProductEditComp from "../CRUD/ProductEditComp";
 import ProtectedRoutingComp from "./ProtectedRoutingComp";
+import DataListComp from "../reduxCode/DataListComp";
 // import LogoutComp from "../layout/LogoutComp";
 
 const routing = createBrowserRouter([
-    { path: "mainDashBoard", element: <ProtectedRoutingComp Component={MainDashBordComp}/>, children: [{ path: "", element: <MyStateComp /> }, { path: "toggle", element: <ToggleImageComp /> }, { path: "hooks", element: <ReactHookComp />, children: [{ path: "usestate", element: <UseStateHookComp /> }, { path: "useeffect", element: <UseEffectComp /> }] }, { path: "myfavcolor", element: <MyFavColorComp newColor="red" /> }, { path: "form", element: <FormValComp /> }, { path: "productdash", element: <ProductDashComp />},{ path: "productadd", element: <ProductAddComp/> },{ path: "productedit/:id", element: <ProductEditComp/> }] },
+    { path: "mainDashBoard", element: <ProtectedRoutingComp Component={MainDashBordComp}/>, children: [{ path: "", element: <MyStateComp /> }, { path: "toggle", element: <ToggleImageComp /> }, { path: "hooks", element: <ReactHookComp />, children: [{ path: "usestate", element: <UseStateHookComp /> }, { path: "useeffect", element: <UseEffectComp /> }] }, { path: "myfavcolor", element: <MyFavColorComp newColor="red" /> }, { path: "form", element: <FormValComp /> }, { path: "productdash", element: <ProductDashComp />},{ path: "productadd", element: <ProductAddComp/> },{ path: "productedit/:id", element: <ProductEditComp/> },{path:"datalist",element:<DataListComp/>}] },
     { path: "", element: <LoginComp /> },
     { path: "login", element: <LoginComp /> },
     { path: "virtualdom", element: <VirtualDom /> },

@@ -1,0 +1,31 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 160px;
+    height: 500px;
+    padding: 0;
+    flex-direction: column;
+}
+.center img{
+    border-radius: 7px;
+    box-shadow:0px 0px 20px rgb(0,0,0,1) ;
+    height: 300px;
+    width: 300px;
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-arrange{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 800px;
+}
+.button-arrange button{
+    width: 100px;
+}

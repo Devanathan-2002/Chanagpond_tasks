@@ -7,12 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import routing from './MainRouting/routing';
 import {RouterProvider} from 'react-router-dom';
-
+import { Provider } from 'react-redux';
+import store from './reduxCode/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+    <Provider store={store}>
     <RouterProvider router={routing}></RouterProvider>
+    </Provider>
+    
   </React.StrictMode>
 );
 

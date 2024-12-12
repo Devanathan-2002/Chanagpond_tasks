@@ -32,6 +32,7 @@ export const NavComp = () => {
         <Link to="myfavcolor"><button className='btn btn-primary btn-sm'>My Fav color</button></Link>{" "}
         <Link to="form"><button className='btn btn-primary btn-sm'>Form</button></Link>{" "}
         <Link to="productdash"><button className='btn btn-warning btn-sm' style={parent}>Product Dash</button></Link>{" "}
+        <Link to="datalist"><button className='btn btn-warning btn-sm' style={parent}>Data list</button></Link>{" "}
         <button className='btn btn-danger btn-sm' onClick={Logout} style={child}>LogOut</button>
     </div>
   )

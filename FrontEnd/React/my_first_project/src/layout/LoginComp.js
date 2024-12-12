@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import "../external/login.css"
 function LoginComp() {
 
 
@@ -52,7 +52,7 @@ function LoginComp() {
   }
   return (
     <div className='container mt-2' style={center_div}>
-            <form class="form" style={center}>
+            <form class="form center">
               <label for ="name">Enter your Name:</label>
               <input name="name" type='text' class="form-control mt-2 mb-2" ref={uidRef}></input>
               <label for ="password">Enter your Password:</label>

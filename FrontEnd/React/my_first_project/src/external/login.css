@@ -1,0 +1,33 @@
+.center{
+    position:relative;
+    /* top:"30%", */
+    border:2px solid ;
+    padding:100px;
+    border-radius:6px;
+    background:grey;
+    font-weight:bold
+  }
+
+  .center:hover{
+    box-shadow: 2px 8px 20px rgb(0, 0, 0,0.9);
+    background: linear-gradient(90deg, #ff6b6b, #fbc531, #00a8ff, #9c88ff);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s linear infinite;
+  }
+
+  .center:hover button{
+    background-color: black;
+    color: antiquewhite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

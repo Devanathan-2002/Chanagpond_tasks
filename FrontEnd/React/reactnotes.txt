@@ -333,3 +333,210 @@ test("msg",function):
 -it takes two parameter
        1.message:in this message developer write what he is going to perform in short.
        2.function:in function write testing code.
+
+
+10/12/24:
+
+--describe(msg,function): it is use to group multiple test case.
+--coverage: it is tracking process it will tell us how much cod cover.
+
+how to generate test coverage file
+step:1--go to package.json and write in script tag
+scripts:{
+    "coverage":"just --coverage --watchAll"
+}
+
+step:2--in pacakage.json file and jest coverage code
+
+"jest":{
+    "collectCoverage":true,
+    "coverageDirectory":"coverage",
+    "coverageReporters":["json","lcov","text","clover"],
+    "coverageThreshold":{
+      "global":{
+        "branches":80,
+        "functions":80,
+        "lines":80,
+        "statements":80
+      }
+    }
+  }
+
+
+  Redux: it use to store,manage and tract state for javascript application.
+  or it is predictable state contianer for java script.
+
+  --redux work o three core primciple.
+
+  --store(bank)-- it is use to store state in it.
+  --action-- (window,deposit,transfer): it is simple statement which are going to perform.
+  --reducer(casier): it acctually carryout state transaction depending om staate and action and it retun new state.
+
+
+react project:
+redux library:
+    --reduxtoolkit
+
+react-redux library: it is use to connect react app with redux or redux toolkit.
+
+_______________________------------_________________________---------------____________
+Angular:
+
+--it is java script framework
+-- it provide desigining and developemnet paltform for creating single page application.
+-- latestversion of angular is 18.
+-- angular is developed and maintained by google.
+
+** commands to install and work with angular **
+
+ng --version
+
+npm install -g @angular/cli
+
+ng new projectname
+
+ng serve to start project
+
+-- angular work on component-- 
+compnent: it is partial part of angular project 
+            --it coantins code for angular project,
+            --it can be used any part of project, which we can reuse multiple time.
+
+-- in angular root componnet name is app
+
+** how to create component in Angular **
+
+ng generate component componentName
+ng g c component name
+
+
+-- when we create component in angular it generate four file html,css,ts,spec.ts
+-- how to get output of individual component.
+-- go to component ts file and copy its selector name and write as tag where you want.
+
+** data binding**
+-- getting or accessing data from one file to another file in same component
+1. interpolation {{}}: in send data from ts file to html file.
+2. property binding[]: in this we set attribute (property) values ts=> html.
+3. event binding (): in this we sent data from html => ts file
+4. two-way databinding [()]= in this we can send data from ts to html
+                            -- to perfrom two-way databinding we have ng model directory but ngmodel directive is not part of core angular module it is part formsmodule, for this first we have to import form module in app.ts file import array.ts file in import array.
+
+**directive in angular**
+-- it is use to change apperance and behaviour as well as perform dom manipulation in angular
+-- there are three types of directives in angular.
+1. structural directives: it is use to perform dom manipulation in angular.
+                            -- structural directive denoted by *
+                            -- structural directive are *ngIf,*ngFor,*ngSwitchCase.
+                            -- we can apply one directive at a time to single element.
+                            -- it is part of common module for this first we have to import comman in component.
+
+ng-template -- display out on the basis of condition
+                         -- to create reference variable in angular we use #
+                
+    2. attribute directive --it is use to cahnge appearance and behaviour of DOM
+                  -ngStyle-- it is used to apply css style property on the basic of condition
+                  -ngClass-- it is used to apply css class on the basis of condition
+                  -ngModel-- it is use to perform two-way binding
+
+3. custom derective:
+ ng g directive directiivename
+
+ ng g c parent
+ ng g c child
+
+ comaponent interaction:
+ accesing data from parent component to child component
+ -- input() decerator : it is use to send data from parent component to child component.
+ --output() decerator: it is use to send data from child component to parent component.
+
+ pipes*:
+ --it is use to transform property value without changing itd original value.
+ -- it is denoted by | single
+ -- there are three types of pipes in angular.
+ 1. inbuilt: pipe provided by angular.
+ 2. custom pipe: pipe create by developer for particular use.
+ 3. thirdparty pipe : pipes already developed by third party vender, first we have to install it and then use it.
+
+
+
+custom pipes:
+
+******
+
+how to install bootstrap in angular
+
+-- npm i bootstrap
+-- got to angular.json and in its style array import its paths
+-- restart angular project.
+
+layout folder:
+
+nav,pagenot found,maindashboard,footer,LoginComp
+ng g c layout/nav
+form folder,
+angform,utdf,utf
+
+*routing in angular:
+-- navigation of component.
+-- to display component output or navigating component by using routing in anguar for it we write code in app.routes.ts file.
+-- in angular all routing component wil display its output bellow <router-outer>
+
+
+1. naming routing:
+2. default routing:
+3. redirect routing:
+4. parameterized routing:
+5. child routing:
+6. wild-card routing:
+
+_____________------------------------------------------------------------------------_________________
+12/12/24
+
+How to navigate in angular:
+--to perform component navigating we have to use routerlink property with anchor tag, but first we have to import routerlink in component ts file form "@react/router" library.
+
+
+angular form:
+-- there are two types of forms.
+1. UTDF( user Template Driven Form)
+    -- when we have create simple form validation in that case we use it.
+    -- to perform validation we have to use ng model directory with input element.
+    -- in this ngForm directory will hold data all element in it.
+2. Rtf (reactive template form):
+    -- when we have to write complex logic to perform form validation in that case we use it.
+    -- to use rtf form validation first we have to import ReactiveFormModule from FormsModule in component.
+    -- in rtf we write form validation code in ts file.
+    -- in this we use mainly two classes, formGroup, formControl.
+    -- formGroup: it will hold information of all input element.
+    -- formControl: it will hold information of individual input element.
+
+
+how to create service class:
+    ng g service service name
+    ng g service shared/services/service name
+
+services in angular:
+- in angular services is speical class with extra power.
+- it is use for multiple users
+1. to share data with multiple component.
+2. we can implement buissness logoc in it.
+3. we can perform external communication.
+
+* how to access data from service into angular component.
+-- if you want to service data into angular for this first we have import service in componnet ts file and create instance of service class
+
+
+REST Fake API
+--CRUD
+cd src/app/shared/database (enter)
+json-server --watch -p 8888 db.json
+
+how to make api reaquest from angular to services
+-- to send requests from angular service to server for this we have create instance of HTTPclient class in service constructor, but HttpClient class in not part of HttpClientModule, so first we have to imort HttpClientModule module. so first we have to import provideHttpClient as well as withJsonSupport in app. config.ts file and make entry of these library in provider array.
+
+so we have to import HttpClientModule.
+
+ng g c crud/Productdash
+ng g c crud/Productadd
+ng g c crud/Productedit

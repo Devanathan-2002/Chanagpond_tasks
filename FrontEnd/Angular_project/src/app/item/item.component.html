@@ -1,0 +1,17 @@
+<p>item works!</p>
+<button type="button" (click)="itemObj.welcome('deva','changepond')" class="btn btn-primary">Click me</button>
+
+<div class="alignment">
+    <div class="card" *ngFor="let item of myitems">
+        <div class="card-header">
+            <img [src]="item.path" alt="">
+        </div>
+        <div class="card-body">
+            <h3>{{item.name}}</h3>
+            <h4>{{item.price}}</h4>
+            <p>{{item.description}}</p>
+        </div>
+    
+    </div>
+</div>
+
