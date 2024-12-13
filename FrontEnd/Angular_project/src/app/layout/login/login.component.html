@@ -1,1 +1,10 @@
-<p>login works!</p>
+<div class="container">
+    <form class="form">
+        <label for="" >Enter Your user id</label>
+        <input type="text" class="form-control mt-2" name="uid" [(ngModel)]="uid">
+        <label for="" class="mt-2">Enter Your Password</label>
+        <input type="password" class="form-control mt-2" name="upass" [(ngModel)]="upass">
+        <button type="button" class="btn btn-secondary mt-3" (click)="checkUser()">Login</button>
+
+    </form>
+</div>

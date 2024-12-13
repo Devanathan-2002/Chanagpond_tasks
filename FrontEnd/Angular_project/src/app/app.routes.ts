@@ -12,6 +12,7 @@ import { ItemComponent } from './item/item.component';
 import { ProductdashComponent } from './crud/productdash/productdash.component';
 import { ProductaddComponent } from './crud/productadd/productadd.component';
 import { ProducteditComponent } from './crud/productedit/productedit.component';
+import { authGuard } from './shared/custguard/auth.guard';
 
 export const routes: Routes = [
     // default routing
@@ -20,7 +21,7 @@ export const routes: Routes = [
     // naming routing
     {path:"login",component:LoginComponent},
     
-    {path:"maindashboard",component:MainDashBoardComponent,children:
+    {path:"maindashboard",component:MainDashBoardComponent,canActivate:[authGuard],children:
         [{path:"databinding",component:DatabindingComponent},
         {path:"parent",component:ParentComponent},
         //paramterized routing

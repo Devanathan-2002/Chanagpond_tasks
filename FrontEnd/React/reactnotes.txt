@@ -540,3 +540,34 @@ so we have to import HttpClientModule.
 ng g c crud/Productdash
 ng g c crud/Productadd
 ng g c crud/Productedit
+
+_________________________________________________________________________________________________________
+
+13/12/2024
+
+how to use concurrently library:
+step 1: install it
+
+npm i -g concurrently
+
+step 2: got to package.json file and in script part write below code 
+
+"json-server": "cd src/app/shared/database && npx json-server -watch -p 8888 db.json",
+"start-dev": "concurrently \ "ng serve\" \ "npm run json-server\"",
+
+terminate all server and terminal.
+run=> npm run start-dev
+
+guard: in agular guard is use to prevent rendering of routing comaponent.
+    -- it return boolean value either true or false.
+    -- if it return true then component will render otherwise not
+
+how to generte guard:
+ng g guard guardname
+ng g guard shared/custguard/auth\
+http-anular-server
+npm isntall -g angular-http-server
+
+
+*testing in angular
+ng test
