@@ -1,0 +1,20 @@
+Select first_name , last_name from customer where address_id > 30 ;
+Select first_name , last_name from customer where address_id < 5 ;
+Select first_name , last_name from customer where address_id >= 10 ;
+Select first_name , last_name from customer where address_id <= 30 ;
+Select first_name , last_name from customer where address_id != 40 ;
+Select first_name , last_name from customer where address_id = 40 ;
+
+Select first_name, last_name, store_id, address_id  from customer where first_name LIKE '_a%' offset 2;
+Select first_name , last_name, store_id ,address_id from customer where store_id = 1 AND address_id > 20 ;
+Select first_name, last_name, store_id, address_id from customer where NOT (address_id <= 20);
+Select first_name , last_name, store_id ,address_id from customer where store_id = 2 OR address_id > 20 ;
+Select first_name, last_name, store_id, address_id  from customer where address_id IN (20,21,23);
+Select first_name, last_name, store_id, address_id  from customer where address_id NOT IN (20,21,23);
+Select first_name, last_name, store_id, address_id  from customer where address_id between 20 and 30;
+Select first_name, last_name, store_id, address_id  from customer where address_id not between 20 and 30;
+Select first_name, last_name, store_id, address_id  from customer where first_name LIKE 'A%';
+Select first_name, last_name, store_id, address_id  from customer where first_name NOT LIKE 'A%';
+Select first_name, last_name, store_id, address_id  from customer where first_name is not Null;
+Select first_name, last_name, store_id, address_id  from customer where first_name is Null;
+Select first_name, last_name, store_id, address_id  from customer where first_name LIKE '_a%' limit 10;
