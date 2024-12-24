@@ -28,7 +28,7 @@ mixed_type=[1,3,2,1,1,1,1,32,4,12]
 # extend
 
 # mixed_type.extend(final)
-# # mixed_type.sort(reverse=True)
+# # mixed_type.sort()
 # print(mixed_type)
 
 # insert
@@ -57,6 +57,6 @@ mixed_type=[1,3,2,1,1,1,1,32,4,12]
 # print(mixed_type.index(1,2))
 # ______________________________________________________________________________________
 
-
+             
 
 

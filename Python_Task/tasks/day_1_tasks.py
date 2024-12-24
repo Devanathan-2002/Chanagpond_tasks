@@ -42,10 +42,11 @@
 
 foods=['samosa','chapathi','dosa','idly','tea']
 
-# print('datatype of food: ',type(foods))
-print('size of food: ',len(foods))
-foods.append('poori')
-foods[len(foods)-1]='masala dosa'
-print('new list of food: ',(foods))
+# # print('datatype of food: ',type(foods))
+# print('size of food: ',len(foods))
+# foods.append('poori')
+# foods[len(foods)-1]='masala dosa'
+# print('new list of food: ',(foods))
+print('food is present',foods[1:4])
 
 
