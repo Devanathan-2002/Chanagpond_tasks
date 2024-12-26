@@ -25,14 +25,18 @@ def Demo_03(value1,value2):
     sub=value1-value2
     return Add,sub
 
+
+
+
 def main():
     demo()
-    print('-'*100)
+    print('-'*100) 
     Demo_01(100)
     print('-'*100)
     Demo_02(100,200)
     print('-'*100)
-    print(Demo_03(100,200))
+    print("Addition:",Demo_03(100,200)[0])
+    print("Subtraction:",Demo_03(100,200)[1])
 
 if __name__=="__main__":
     main()
