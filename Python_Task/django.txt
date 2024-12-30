@@ -1,0 +1,10 @@
+INSTALLING VIRTUAL ENV
+--pip install virtualenvwrapper-win
+--mkvirtualenv (env name)
+--pip freeze
+--workon (virtual env name) -> it is used to activate the virtual environment
+-- deactivate 
+
+TO INSTALL DJANGO
+-- pip install django
+-- django-admin startproject projectname

@@ -26,4 +26,4 @@ def main():
     User_1.CreateAccount()
     User_1.DisplayInformation()
     print()
-    
+main()
