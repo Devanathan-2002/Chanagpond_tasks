@@ -3,7 +3,7 @@
     {
       "pname": "fridge3",
       "pprice": "52003",
-      "company": "samsung3",
+      "company": "samsung",
       "pquantity": "523",
       "id": "0324"
     },
@@ -13,6 +13,13 @@
       "pprice": "5200",
       "company": "Onida",
       "pquantity": "52"
+    },
+    {
+      "id": "a382",
+      "pname": "Fridge",
+      "pprice": "8000",
+      "company": "jk",
+      "pquantity": "89"
     }
   ],
   "user": [
