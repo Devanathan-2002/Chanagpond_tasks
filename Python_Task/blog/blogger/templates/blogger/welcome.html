@@ -1,0 +1,125 @@
+<!-- templates/welcome.html -->
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+AU+SA&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+
+    <title >Welcome to Blog</title>
+    <style>
+        .jersey-10-regular {
+            font-family: "Jersey 10", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        body {
+            background-color: #f8f9fa; 
+        }
+        .container {
+            margin-top: 50px; 
+        }
+        .blog-post {
+            background-color: #ffffff; 
+            border: 1px solid #dee2e6;
+            border-radius: 5px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
+        h1 {
+            font-family: 'Arial', sans-serif; 
+            color: #343a40; 
+        }
+        .blog-image {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+        }
+        .header {
+            background-image: url('{% static "images/headerimage.jpg" %}'); /* Background image */
+            background-size: cover; /* Cover the entire header */
+            color: white; /* Text color */
+            padding: 60px 0; /* Padding for the header */
+            text-align: center; /* Center text */
+        }
+        .header h1 {
+            font-weight: 400;
+            font-style: normal;
+            font-family: font-family: 'Courier New', monospace; /* Custom font for header */
+            font-size: 3rem; /* Font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+        }
+        .header p {
+            font-size: 1.5rem; 
+            margin-top: 10px; 
+        }
+        .playwrite-au-sa-header {
+            font-family: "Playwrite AU SA", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+          }
+          .loadmore{
+            display: flex;
+            justify-content: center;
+            align-item:center;
+          }
+          .dancing-script-middle {
+            font-family: "Dancing Script", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+          }
+          footer{
+            width: 100;
+            left:0;
+            right:0;
+            height:100px;
+          }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="playwrite-au-sa-header">Welcome to My Blog</h1>
+            <p class="dancing-script-middle">Your daily dose of inspiration</p>
+        </div>
+    </header>
+    <div class="container text-center">
+        <h1 class="dancing-script-middle">The Recent Blogs</h1>
+        <div class="row mt-4">
+            {% for post in posts %}
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <h2 class="jersey-10-regular">{{ post.title|upper }}</h2>
+                    <p><strong>Date Posted:</strong> {{ post.date_posted }}</p>
+                    {% if post.image %}
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-image">
+                    {% endif %}
+                    <p class="playwrite-au-sa-header">{{ post.content|truncatewords:30 }}</p>
+                    <a href="/blogger/{{post.slug}}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+        <div class="loadmore mb-3">
+            <a href="/blogger/next-page"><button class="btn btn-warning">Load More....</button></a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{%include "blogger/base.html"%}
+</html>

@@ -196,3 +196,14 @@
 # _______________________________________________________________________________________________________
 
 
+n=4
+final=1
+def fact(n):
+    global final
+    if n==1:
+        return final
+    else:
+        print(final)
+        final*=n
+        return fact(n-1)
+print(fact(n))

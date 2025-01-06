@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "author/index.css" %}">
+{% endblock css %}
+
+{%block title%}My first site{%endblock%}
+{%block content%}
+<body>
+    {% for book in book_collections%}
+    <div>
+        {%include "author/includes/post.html"%}
+    </div>
+    {% endfor %}
+    
+</body>
+{%endblock%}

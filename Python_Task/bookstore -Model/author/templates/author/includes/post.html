@@ -1,0 +1,16 @@
+<li>
+    <article>
+            <img src="" alt="smaple logo">
+        <div>
+            <h3>Title: {{book.title}}
+            </h3>
+            <p>Author:{{book.author.first_name}}</p>
+            <p>Rating:{{book.rating}}</p>
+            {% if book.is_bestselling %}
+            <p>FeedBack: This book is bestselling</p>
+            {% else %}
+            <p>FeedBack: This book is not bestselling</p>
+            {% endif %}
+        </div>
+    </article>
+</li>
