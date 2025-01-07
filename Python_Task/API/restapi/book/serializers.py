@@ -1,15 +1,15 @@
-from rest_framework import searlizers
+from rest_framework import serializers
 from .models import Book
 from author.serializers import AuthorSerializer
 
 
 
-class BookSerializer(searlizers.ModelSerializer):
-    author_id=searlizers.IntegerField(write_only=True)
-    author=AuthorSerializer(read_only=True)
+class BookSerializer(serializers.ModelSerializer):
+    author_id=serializers.IntegerField(write_only=True)
+    # author=AuthorSerializer(read_only=True)
     
     
     class Meta:
         model=Book
-        fields=['id','rating','author','author_id']
+        fields=['id','rating','title','author_id']
         read_only_fields=['id']

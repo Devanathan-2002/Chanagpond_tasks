@@ -85,6 +85,17 @@
             right:0;
             height:100px;
           }
+          footer {
+            width: 100%;
+            height: 100px;
+              background-color: powderblue;
+              border-top: 2px solid orange;
+            text-align: center;
+          }
+          li a{
+              text-decoration:none;
+              color:black;
+          }
     </style>
 </head>
 <body>
@@ -106,20 +117,26 @@
                         <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-image">
                     {% endif %}
                     <p class="playwrite-au-sa-header">{{ post.content|truncatewords:30 }}</p>
-                    <a href="/blogger/{{post.slug}}" class="btn btn-primary">Read More</a>
+                    <a href="/blogger/blog/{{post.slug}}" class="btn btn-primary">Read More</a>
                 </div>
             </div>
             {% endfor %}
             
         </div>
         <div class="loadmore mb-3">
-            <a href="/blogger/next-page"><button class="btn btn-warning">Load More....</button></a>
+            <a href="/blogger/nextpage"><button class="btn btn-warning">Load More....</button></a>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer style="background-color:powderblue;height:50px;">
+        <ul style="display: flex; gap:20px;align-item:center;justify-content:center;list-style-type: none;" class="mt-3">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/blogger/create">CREATE</a></li>
+        </ul>
+     </footer>
 </body>
-{%include "blogger/base.html"%}
+
 </html>

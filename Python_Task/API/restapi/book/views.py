@@ -1,6 +1,4 @@
-from django.shortcuts import render
 
-# Create your views here.
 from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 from . models import Book
@@ -8,12 +6,15 @@ from .serializers import BookSerializer
 from rest_framework import status,permissions
 from rest_framework.exceptions import APIException
 from rest_framework.response import Response
-from rest_framework_simplejwt.authentication import authentication 
+from rest_framework import permissions
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 # Create your views here.
 class BookViewSet(ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
     
 
     def get_serializer_class(self):
@@ -60,7 +61,7 @@ class BookViewSet(ModelViewSet):
             return Response({
                 'status':status.HTTP_201_CREATED,
                 'data': serializer.data,
-                'messaage':'Author added successfully'
+                'messaage':'Book added successfully'
             })
 
         except Exception as e:
@@ -111,7 +112,7 @@ class BookViewSet(ModelViewSet):
             return Response({
                 'status':status.HTTP_200_OK,
                 'data': serializer.data,
-                'messaage':'Author updated successfully'
+                'messaage':'Book updated successfully'
             })
 
         except Exception as e:
@@ -141,7 +142,7 @@ class BookViewSet(ModelViewSet):
             return Response({
                 'status':status.HTTP_200_OK,
                 'data': serializer.data,
-                'messaage':'Author updated successfully'
+                'messaage':'Book updated successfully'
             })
 
         except Exception as e:
@@ -158,7 +159,7 @@ class BookViewSet(ModelViewSet):
             author_obj.delete()
             return Response({
                 'status':status.HTTP_200_OK,
-                'messaage':'Author deleted successfully'
+                'messaage':'Book deleted successfully'
             })
 
         except Exception as e:
@@ -167,3 +168,4 @@ class BookViewSet(ModelViewSet):
                 'message':APIException.default_detail,
                 'status': APIException.status_code
             })
+            
