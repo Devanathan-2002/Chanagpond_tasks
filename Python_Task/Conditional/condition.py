@@ -6,6 +6,8 @@ def main():
         print('Tuesday:Sick Leave')
     elif day==3:
         print('Wednesday:Working')
+    elif day==4:
+        print('Thurusday:NotWorking')
     else:
         print('please enter 1/2/3')
 

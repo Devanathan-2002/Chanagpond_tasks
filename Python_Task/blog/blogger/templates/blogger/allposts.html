@@ -1,0 +1,102 @@
+<!-- templates/welcome.html -->
+{% extends "base.html" %}
+{%load static%}    
+    {% block title%}All post{% endblock%}
+        {%block style%}
+        .jersey-10-regular {
+            font-family: "Jersey 10", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+          .jersey-10-regular1 {
+            font-family: "Jersey 10", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:60px;
+            text-align:center;
+          }
+        body {
+            background-color: #f8f9fa; 
+        }
+        .container {
+            margin-top: 50px; 
+        }
+        .blog-post {
+            background-color: #ffffff; 
+            border: 1px solid #dee2e6;
+            border-radius: 5px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
+        h1 {
+            font-family: 'Arial', sans-serif; 
+            color: #343a40; 
+        }
+        .blog-image {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+        }
+        header {
+            background-color:powderblue;
+            border-bottom: 5px solid orange;    
+        }
+        .header h1 {
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Courier New', monospace; /* Custom font for header */
+            font-size: 3rem; /* Font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+        }
+        .header p {
+            font-size: 1.5rem; 
+            margin-top: 10px; 
+        }
+        .playwrite-au-sa-header {
+            font-family: "Playwrite AU SA", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+          }
+          .loadmore{
+            display: flex;
+            justify-content: center;
+            align-item:center;
+          }
+        {% endblock%}
+
+
+
+        
+
+{% block body %}
+<header>
+    <h1 class="jersey-10-regular1">
+        {THE COOLEST BLOG} 
+    </h1>
+</header>
+            
+
+<div class="container text-center">
+    <div class="row mt-4">
+        {% for post in posts %}
+        <div class="col-md-4">
+            <div class="blog-post">
+                <h2 class="jersey-10-regular">{{ post.title|upper }}</h2>
+                <p><strong>Date Posted:</strong> {{ post.date_posted }}</p>
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-image">
+                {% endif %}
+                <p class="playwrite-au-sa-header p-2">{{ post.content|truncatewords:30 }}</p>
+                <a href="/blogger/blog/{{post.slug}}" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock body %}
+</html>

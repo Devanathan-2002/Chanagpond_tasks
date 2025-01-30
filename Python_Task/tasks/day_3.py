@@ -20,6 +20,17 @@
 #     main()
 
 
+
+# def menu():
+#     Menu=['Dosa','Idly','Biriyani']
+#     choices=input('Enter the choices:\n ')
+
+# print(menu())
+
+# if __name__=='__main__':
+#     main()
+
+
 # menu_list=['Dosa','Chapathi','Poori','Porata','Biriyani']
 # def display_item():
 #     return(menu_list)
@@ -109,5 +120,4 @@
 #     else:
 #         print('Invalid option....')
 # main()
-
 
